@@ -1,11 +1,10 @@
 from os import getenv
-from dotenv import load_dotenv, find_dotenv
+from dotenv import load_dotenv
 from uvloop import install
-from tkinter.tix import Tree
 from pyrogram import Client, filters
 from pyrogram.types import ReplyKeyboardMarkup
 
-load_dotenv(find_dotenv('ambiente.env'))
+load_dotenv()
 install()
 
 app = Client(
